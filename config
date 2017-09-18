@@ -174,7 +174,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	font pango:Inconsolata 12
-	status_command ~/bumblebee-status/bumblebee-status -m nic disk:root memory battery date time pasink brightness github -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
+	status_command ~/bumblebee-status/bumblebee-status -m nic disk:root memory battery date time pasink brightness github spotify -p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t gruvbox-powerline
 	colors {
 		statusline #FF5733
 		
