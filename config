@@ -43,7 +43,7 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # program bindkey
-bindsym $mod+o exec opera 
+bindsym $mod+o exec opera
 bindsym $mod+g exec chromium
 bindsym $mod+i exec spotify
 bindsym $mod+p exec libreoffice
@@ -169,7 +169,7 @@ mode "resize" {
 }
 client.focused          #ffffff #29665f #ffffff #ffffff
 client.focused_inactive #333333 #E8B001 #ffffff #484e50
-client.unfocused        #333333 #424242 #888888 #292d2e 
+client.unfocused        #333333 #424242 #888888 #292d2e
 client.urgent           #C10004 #900000 #ffffff #900000
 
 bindsym $mod+r mode "resize"
@@ -178,14 +178,13 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	font pango:Inconsolata 13
-	status_command ~/bumblebee-status/bumblebee-status -m nic traffic disk:root battery pasink brightness date time github spotify -p root.path=/ time.format="%H:%M:%S" date.format="%a, %b %d %Y" -t gruvbox-powerline
+	status_command ~/bumblebee-status/bumblebee-status -m weather nic disk:root battery pasink brightness date time -p root.path=/ time.format="%H:%M:%S" date.format="%a, %b %d %Y" -t gruvbox-powerline
 	#colors {
 	#	statusline #FF5733
-		
+
 	#}
 }
 
-	
+
 
 exec startx
-
