@@ -47,6 +47,8 @@ bindsym $mod+o exec opera
 bindsym $mod+g exec chromium
 bindsym $mod+i exec spotify
 bindsym $mod+p exec libreoffice
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+a exec compile.py
 
 #spotify play/pause enable
 bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
@@ -178,7 +180,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	font pango:Inconsolata 13
-	status_command ~/bumblebee-status/bumblebee-status -m spotify weather nic disk:root battery pasink brightness date time -p root.path=/ time.format="%H:%M:%S" date.format="%a, %b %d %Y" -t gruvbox-powerline
+	status_command ~/bumblebee-status/bumblebee-status -m spotify weather disk:root battery pasink brightness date time -p root.path=/ time.format="%H:%M:%S" date.format="%a, %b %d %Y" -t gruvbox-powerline
 	#colors {
 	#	statusline #FF5733
 
@@ -188,3 +190,5 @@ bar {
 
 
 exec startx
+exec nm-applet
+exec feh --no-startup-id --bg-scale ~/Downloads/Image/wall4.jpg
