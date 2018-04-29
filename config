@@ -48,7 +48,7 @@ bindsym $mod+g exec chromium
 bindsym $mod+i exec spotify
 bindsym $mod+p exec libreoffice
 bindsym $mod+Shift+f exec firefox
-bindsym $mod+Shift+a exec compile.py
+bindsym $mod+Shift+i exec intellij-idea-ultimate 
 
 #spotify play/pause enable
 bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
