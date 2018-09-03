@@ -48,7 +48,7 @@ bindsym $mod+g exec chromium
 bindsym $mod+i exec spotify
 bindsym $mod+p exec libreoffice
 bindsym $mod+Shift+f exec firefox
-bindsym $mod+Shift+i exec intellij-idea-ultimate 
+bindsym $mod+Shift+i exec intellij-idea-ultimate
 
 #spotify play/pause enable
 bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
@@ -187,8 +187,12 @@ bar {
 	#}
 }
 
-
+#windows
+for_window [class="^.*"] border pixel 1
+exec compton -b -c
 
 exec startx
 exec nm-applet
-exec feh --no-startup-id --bg-scale ~/Downloads/Image/wall4.jpg
+exec feh --no-startup-id --bg-scale ~/Downloads/Image/wall.jpg
+exec xset b off
+exec xset -dpms s off
