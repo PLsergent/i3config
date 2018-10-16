@@ -197,4 +197,4 @@ exec feh --no-startup-id --bg-scale ~/Downloads/Image/wall.jpg
 exec xset b off
 exec xset -dpms s off
 exec xinput --set-prop 11 "libinput Natural Scrolling Enabled" 1
-exec xinput --set-prop 11 "libin Accel Speed" 0.3
+exec xinput --set-prop 11 "libinput Accel Speed" 0.3
